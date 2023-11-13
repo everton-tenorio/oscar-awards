@@ -50,7 +50,7 @@ export default {
   methods: {
     async obterAnosDisponiveis() {
       try {
-        const response = await fetch("http://127.0.0.1:5000/anos");
+        const response = await fetch("http://evertontenorio.tech:3001/anos");
         const data = await response.json();
         this.anosDisponiveis = data.slice().reverse();
         // Definir um ano padrão
@@ -64,7 +64,7 @@ export default {
     async buscarInformacoes() {
       try {
         const response = await fetch(
-          `http://127.0.0.1:5000/${this.tipoPesquisa}/${this.anoSelecionado}`
+          `http://evertontenorio.tech:3001/${this.tipoPesquisa}/${this.anoSelecionado}`
         );
         const data = await response.json();
 
