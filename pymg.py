@@ -4,13 +4,11 @@ import requests
 import re
 import json
 from environs import Env
-import pandas as pd
-from bson import ObjectId
 
 env = Env()
 env.read_env()
 # Conectar ao MongoDB
-client = MongoClient(env('MONGODB_URI'))
+cliente = MongoClient(env('MONGODB_URI'))
 
 
 def obter_json_imdb(ano):
