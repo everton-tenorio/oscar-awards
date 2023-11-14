@@ -17,7 +17,7 @@
         </select>
       </div>
       <div class="resultados" v-if="informacoes.length > 0">
-        <h2>Resultados</h2>
+        <!--<h2>Resultados</h2>-->
         <div v-for="(categoria, indice) in informacoes" :key="indice">
           <!--<h3>{{ indice }}</h3>-->
           <ul>
