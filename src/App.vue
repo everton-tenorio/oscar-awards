@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img id="logo" src="./src/assets/logo.png" alt="oscar" />
+    <img id="logo" src="./assets/logo.png" alt="oscar" />
     <h1>Oscar Awards</h1>
     <div class="container">
       <div class="input-group">
